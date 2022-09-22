@@ -1,0 +1,379 @@
+[INFO ] 2022-09-20 22:03:34.137 [main] Logger - Log new
+[INFO ] 2022-09-20 22:06:13.185 [main] Logger - Log new
+[WARN ] 2022-09-20 22:06:13.188 [main] Logger - Log new
+[ERROR] 2022-09-20 22:06:13.188 [main] Logger - Log new
+[INFO ] 2022-09-20 22:14:48.621 [main] Version - HHH000412: Hibernate ORM core version 5.6.8.Final
+[WARN ] 2022-09-20 22:14:49.023 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO ] 2022-09-20 22:14:49.029 [main] pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/shop]
+[INFO ] 2022-09-20 22:14:49.030 [main] pooling - HHH10001001: Connection properties: {password=123456, user=postgres}
+[INFO ] 2022-09-20 22:14:49.030 [main] pooling - HHH10001003: Autocommit mode: false
+[INFO ] 2022-09-20 22:14:49.031 [main] DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO ] 2022-09-20 22:14:49.160 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+[INFO ] 2022-09-20 22:14:49.589 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7412a438] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO ] 2022-09-20 22:14:49.645 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[WARN ] 2022-09-20 22:14:49.715 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO ] 2022-09-20 22:14:49.715 [main] pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/shop]
+[INFO ] 2022-09-20 22:14:49.715 [main] pooling - HHH10001001: Connection properties: {password=123456, user=postgres}
+[INFO ] 2022-09-20 22:14:49.715 [main] pooling - HHH10001003: Autocommit mode: false
+[INFO ] 2022-09-20 22:14:49.715 [main] DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO ] 2022-09-20 22:14:49.860 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+[INFO ] 2022-09-20 22:14:49.949 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d30007d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO ] 2022-09-20 22:14:49.996 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-09-20 22:14:50.033 [main] Logger - OrderEntityOTO(id=null, total=25, buyer=BuyerEntityOTM{id=null, name='KOla', money=1000, shop=[]})
+[WARN ] 2022-09-20 22:14:50.056 [main] SqlExceptionHelper - SQL Error: 0, SQLState: 42601
+[ERROR] 2022-09-20 22:14:50.056 [main] SqlExceptionHelper - ОШИБКА: ошибка синтаксиса (примерное положение: "order")
+  Позиция: 13
+[WARN ] 2022-09-20 22:19:14.886 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-20 22:19:15.587 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-20 22:19:15.805 [main] SqlExceptionHelper - SQL Error: 0, SQLState: 42601
+[ERROR] 2022-09-20 22:19:15.805 [main] SqlExceptionHelper - ОШИБКА: ошибка синтаксиса (примерное положение: "order")
+  Позиция: 13
+[WARN ] 2022-09-21 19:41:58.759 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 19:41:59.842 [main] ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists buyer add constraint FK941uqgh8ern8nuw5kma74hora foreign key (orderEntityOTO_id) references order" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists buyer add constraint FK941uqgh8ern8nuw5kma74hora foreign key (orderEntityOTO_id) references order" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.boot.internal.MetadataImpl.buildSessionFactory(MetadataImpl.java:200) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at com.way2it.yk.mapping.one_to_one.config.HibernateSessionConfiguration.getSessionFactory(HibernateSessionConfiguration.java:19) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.dao.OrderDaoOTOImpl.<clinit>(OrderDaoOTOImpl.java:17) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.Test.main(Test.java:18) ~[classes/:?]
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "order")
+  Позиция: 115
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	... 13 more
+[WARN ] 2022-09-21 19:42:00.015 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 19:42:00.241 [main] ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists buyer add constraint FK941uqgh8ern8nuw5kma74hora foreign key (orderEntityOTO_id) references order" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists buyer add constraint FK941uqgh8ern8nuw5kma74hora foreign key (orderEntityOTO_id) references order" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79) ~[javax.persistence-api-2.2.jar:2.2]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54) ~[javax.persistence-api-2.2.jar:2.2]
+	at com.way2it.yk.mapping.one_to_one.config.DatabaseConfig.getEntityManagerFactory(DatabaseConfig.java:14) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.config.DatabaseConfig.getEntityManager(DatabaseConfig.java:21) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.dao.BuyerDaoOTOImpl.<clinit>(BuyerDaoOTOImpl.java:23) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.Test.main(Test.java:19) ~[classes/:?]
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "order")
+  Позиция: 115
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	... 17 more
+[WARN ] 2022-09-21 19:42:00.352 [main] SqlExceptionHelper - SQL Error: 0, SQLState: 42601
+[ERROR] 2022-09-21 19:42:00.352 [main] SqlExceptionHelper - ОШИБКА: ошибка синтаксиса (примерное положение: "order")
+  Позиция: 13
+[WARN ] 2022-09-21 19:55:46.837 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 19:55:47.778 [main] ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists buyer add constraint FK941uqgh8ern8nuw5kma74hora foreign key (orderEntityOTO_id) references order" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists buyer add constraint FK941uqgh8ern8nuw5kma74hora foreign key (orderEntityOTO_id) references order" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.boot.internal.MetadataImpl.buildSessionFactory(MetadataImpl.java:200) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at com.way2it.yk.mapping.one_to_one.config.HibernateSessionConfiguration.getSessionFactory(HibernateSessionConfiguration.java:19) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.dao.OrderDaoOTOImpl.<clinit>(OrderDaoOTOImpl.java:17) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.Test.main(Test.java:18) ~[classes/:?]
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "order")
+  Позиция: 115
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	... 13 more
+[WARN ] 2022-09-21 19:55:47.942 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 19:55:48.189 [main] ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists buyer add constraint FK941uqgh8ern8nuw5kma74hora foreign key (orderEntityOTO_id) references order" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists buyer add constraint FK941uqgh8ern8nuw5kma74hora foreign key (orderEntityOTO_id) references order" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79) ~[javax.persistence-api-2.2.jar:2.2]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54) ~[javax.persistence-api-2.2.jar:2.2]
+	at com.way2it.yk.mapping.one_to_one.config.DatabaseConfig.getEntityManagerFactory(DatabaseConfig.java:14) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.config.DatabaseConfig.getEntityManager(DatabaseConfig.java:21) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.dao.BuyerDaoOTOImpl.<clinit>(BuyerDaoOTOImpl.java:23) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.Test.main(Test.java:19) ~[classes/:?]
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "order")
+  Позиция: 115
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290) ~[postgresql-42.5.0.jar:42.5.0]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	... 17 more
+[WARN ] 2022-09-21 19:55:48.311 [main] SqlExceptionHelper - SQL Error: 0, SQLState: 42601
+[ERROR] 2022-09-21 19:55:48.311 [main] SqlExceptionHelper - ОШИБКА: ошибка синтаксиса (примерное положение: "order")
+  Позиция: 13
+[WARN ] 2022-09-21 20:02:54.038 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:02:55.105 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:18:01.682 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:18:02.780 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:19:42.700 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:19:43.746 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:21:45.583 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:21:46.615 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:24:31.692 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:24:32.731 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:25:22.415 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:25:23.495 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:30:18.990 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:30:20.031 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:36:28.464 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:36:29.493 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:41:14.719 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:41:15.760 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ERROR] 2022-09-21 20:41:16.182 [main] ErrorTracker -  Invalid path: 'orders.id'
+[ERROR] 2022-09-21 20:41:16.183 [main] ErrorTracker -  Invalid path: 'orders.id'
+org.hibernate.hql.internal.ast.InvalidPathException: Invalid path: 'orders.id'
+	at org.hibernate.hql.internal.ast.util.LiteralProcessor.lookupConstant(LiteralProcessor.java:111) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.tree.DotNode.resolve(DotNode.java:218) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.resolve(HqlSqlWalker.java:1066) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.expr(HqlSqlBaseWalker.java:1319) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.exprOrSubquery(HqlSqlBaseWalker.java:4797) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4261) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2180) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:841) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:635) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:339) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:287) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:848) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at com.way2it.yk.mapping.one_to_one.dao.OrderDaoOTOImpl.findById(OrderDaoOTOImpl.java:42) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.Test.main(Test.java:32) ~[classes/:?]
+[ERROR] 2022-09-21 20:41:16.187 [main] ErrorTracker - <AST>:0:0: unexpected end of subtree
+[ERROR] 2022-09-21 20:41:16.187 [main] ErrorTracker - <AST>:0:0: unexpected end of subtree
+antlr.NoViableAltException: unexpected end of subtree
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.exprOrSubquery(HqlSqlBaseWalker.java:4879) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4264) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2180) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:841) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:635) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:339) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:287) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:848) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at com.way2it.yk.mapping.one_to_one.dao.OrderDaoOTOImpl.findById(OrderDaoOTOImpl.java:42) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.Test.main(Test.java:32) ~[classes/:?]
+[ERROR] 2022-09-21 20:41:16.187 [main] ErrorTracker -  left-hand operand of a binary operator was null
+[ERROR] 2022-09-21 20:41:16.187 [main] ErrorTracker -  left-hand operand of a binary operator was null
+antlr.SemanticException: left-hand operand of a binary operator was null
+	at org.hibernate.hql.internal.ast.tree.BinaryLogicOperatorNode.initialize(BinaryLogicOperatorNode.java:41) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.prepareLogicOperator(HqlSqlWalker.java:1489) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4737) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2180) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:841) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:635) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:339) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:287) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:848) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at com.way2it.yk.mapping.one_to_one.dao.OrderDaoOTOImpl.findById(OrderDaoOTOImpl.java:42) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.Test.main(Test.java:32) ~[classes/:?]
+[WARN ] 2022-09-21 20:42:26.441 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:42:27.469 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ERROR] 2022-09-21 20:42:27.876 [main] ErrorTracker -  Invalid path: 'orders.id'
+[ERROR] 2022-09-21 20:42:27.876 [main] ErrorTracker -  Invalid path: 'orders.id'
+org.hibernate.hql.internal.ast.InvalidPathException: Invalid path: 'orders.id'
+	at org.hibernate.hql.internal.ast.util.LiteralProcessor.lookupConstant(LiteralProcessor.java:111) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.tree.DotNode.resolve(DotNode.java:218) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.resolve(HqlSqlWalker.java:1066) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.expr(HqlSqlBaseWalker.java:1319) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.exprOrSubquery(HqlSqlBaseWalker.java:4797) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4261) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2180) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:841) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:635) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:339) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:287) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:848) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at com.way2it.yk.mapping.one_to_one.dao.OrderDaoOTOImpl.findById(OrderDaoOTOImpl.java:42) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.Test.main(Test.java:32) ~[classes/:?]
+[ERROR] 2022-09-21 20:42:27.880 [main] ErrorTracker - <AST>:0:0: unexpected end of subtree
+[ERROR] 2022-09-21 20:42:27.880 [main] ErrorTracker - <AST>:0:0: unexpected end of subtree
+antlr.NoViableAltException: unexpected end of subtree
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.exprOrSubquery(HqlSqlBaseWalker.java:4879) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4264) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2180) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:841) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:635) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:339) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:287) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:848) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at com.way2it.yk.mapping.one_to_one.dao.OrderDaoOTOImpl.findById(OrderDaoOTOImpl.java:42) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.Test.main(Test.java:32) ~[classes/:?]
+[ERROR] 2022-09-21 20:42:27.881 [main] ErrorTracker -  left-hand operand of a binary operator was null
+[ERROR] 2022-09-21 20:42:27.881 [main] ErrorTracker -  left-hand operand of a binary operator was null
+antlr.SemanticException: left-hand operand of a binary operator was null
+	at org.hibernate.hql.internal.ast.tree.BinaryLogicOperatorNode.initialize(BinaryLogicOperatorNode.java:41) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.prepareLogicOperator(HqlSqlWalker.java:1489) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4737) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2180) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:841) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:635) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:339) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:287) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:848) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114) ~[hibernate-core-5.6.8.Final.jar:5.6.8.Final]
+	at com.way2it.yk.mapping.one_to_one.dao.OrderDaoOTOImpl.findById(OrderDaoOTOImpl.java:42) ~[classes/:?]
+	at com.way2it.yk.mapping.one_to_one.Test.main(Test.java:32) ~[classes/:?]
+[WARN ] 2022-09-21 20:43:35.559 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:43:36.569 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:48:02.593 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 20:48:03.639 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:11:47.849 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:14:57.404 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:16:26.827 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:16:28.010 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:20:14.720 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:20:15.786 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:22:09.788 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:25:58.011 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:33:42.112 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:36:08.333 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:37:19.857 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:38:04.763 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:42:27.407 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:43:59.981 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:44:48.311 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:46:06.929 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:46:21.907 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:46:45.027 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:47:02.690 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:47:03.772 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:47:29.828 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:47:57.860 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:47:58.895 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:50:00.146 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:50:01.244 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:51:37.615 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:55:28.326 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:56:25.203 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 22:57:41.164 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:05:02.124 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:06:57.070 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:07:56.972 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:08:58.350 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:09:51.609 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:12:46.051 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:13:33.007 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:13:53.829 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:15:42.390 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:28:52.537 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:31:37.712 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:31:38.873 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:35:23.047 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:35:24.177 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:36:00.320 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:36:01.440 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:36:45.507 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:36:46.655 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:39:51.660 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[WARN ] 2022-09-21 23:39:52.861 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
