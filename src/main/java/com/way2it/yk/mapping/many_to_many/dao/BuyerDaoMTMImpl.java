@@ -55,10 +55,11 @@ public class BuyerDaoMTMImpl implements BuyerDaoMTM {
 
      @Override
     public void deleteBuyer(BuyerEntityMTM buyerEntityMTM) {
-         EntityTransaction transaction = entityManager.getTransaction();
-         transaction.begin();
-         entityManager.remove(buyerEntityMTM);
-         transaction.commit();
+         try (Session session = sessionFactory.openSession()) {
+             Transaction transaction = session.beginTransaction();
+             session.remove(buyerEntityMTM);
+             transaction.commit();
+         }
     }
 
     @Override
